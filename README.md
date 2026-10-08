@@ -2,9 +2,31 @@
 
 **If political systems dictate corruption, why do autocracies and democracies overlap?**
 
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
+![Bokeh](https://img.shields.io/badge/Bokeh-3.7+-E6522C)
+![Type](https://img.shields.io/badge/type-interactive%20data%20visualisation-blue)
+
 An interactive, six-slide data story built with [Bokeh](https://bokeh.org/) on 175 countries (2024). It compares two ways of measuring corruption, shows how much corruption varies *inside* each political regime, and tests whether wealth and history explain the exceptions.
 
-<!-- TODO: add a screenshot or GIF of the app here, e.g. ![App preview](docs/preview.png) -->
+![Slide 3: corruption scores of 175 countries, grouped by political regime](docs/slide-3-regimes.png)
+
+## Preview
+
+**Two ways to measure corruption.** Perception (CPI) and expert assessment (PCI) agree closely (r = 0.91).
+
+![Slide 2: scatter plot comparing the perception-based and expert-based corruption measures, coloured by regime](docs/slide-2-measures.png)
+
+**Does wealth matter?** One panel per regime: richer countries tend to be cleaner, but wealth does not explain the outliers.
+
+![Slide 4: corruption versus GDP per capita, one panel per regime, with trend lines](docs/slide-4-wealth.png)
+
+**Do exceptions last?** Corruption (solid line) and GDP (dashed line) since 1979, with regime changes as background colours.
+
+![Slide 5: time series for Georgia, Hungary, Brazil, Eswatini, Singapore and Italy](docs/slide-5-persistence.png)
+
+**Accessibility.** A colour-blind mode (one marker shape per regime plus dark outlines) and an accessible-text mode are available from the header menu.
+
+![Slide 2 in colour-blind mode, with the Accessibility menu open](docs/accessibility-colour-blind.png)
 
 ## Key findings
 
@@ -21,7 +43,7 @@ The numbers are computed by the app from the dataset, so they stay in sync if th
 ## Run it locally
 
 ```bash
-git clone <your-repo-url>
+git clone git@github.com:Roaldvdb/corruption-regimes-wealth.git
 cd corruption-regimes-wealth
 
 python -m venv .venv
@@ -43,6 +65,7 @@ The app opens at <http://localhost:5006/app>. Python 3.10 or later is recommende
 │   └── main.py                         # Bokeh server app (6 slides)
 ├── data/
 │   └── master_governance_dataset.csv   # final panel dataset used by the app
+├── docs/                               # screenshots used in this README
 ├── notebooks/
 │   ├── 1_download_data.ipynb           # downloads the raw indicators from OWID
 │   └── 2_create_dataset.ipynb          # cleans, aligns and merges them
