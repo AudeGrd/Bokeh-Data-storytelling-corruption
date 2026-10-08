@@ -1,0 +1,15 @@
+# Raw downloads: regenerate with notebooks/1_download_data.ipynb
+data/raw/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

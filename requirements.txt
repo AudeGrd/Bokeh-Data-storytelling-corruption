@@ -1,0 +1,6 @@
+pandas>=2.0
+numpy>=1.26
+bokeh>=3.7        # the legend click interaction needs 3.7+
+# only needed to re-run the notebooks
+jupyterlab
+ipykernel
