@@ -107,6 +107,13 @@ To rebuild the dataset from scratch, run the two notebooks in order. The OWID UR
 
 Python, pandas, NumPy, Bokeh (server app with Python callbacks and a few `CustomJS` interactions).
 
+## Authors & Contributors
+
+- **Roald Van den Bogaard** ([@Roaldvdb](https://github.com/Roaldvdb))
+- **Aude Guerand** ([@AudeGrd](https://github.com/AudeGrd))
+- **Davide Carrieri** ([@DavideCarrieri](https://github.com/DavideCarrieri))
+<!-- Ajoute ici les autres membres de l'équipe s'il y en a -->
+
 <!-- ## License -->
 
 <!-- Add a LICENSE file (e.g. MIT for the code) and state it here. Data licenses remain those of the original providers. -->
