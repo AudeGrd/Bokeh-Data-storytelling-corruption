@@ -107,6 +107,6 @@ To rebuild the dataset from scratch, run the two notebooks in order. The OWID UR
 
 Python, pandas, NumPy, Bokeh (server app with Python callbacks and a few `CustomJS` interactions).
 
-## License
+<!-- ## License -->
 
 <!-- Add a LICENSE file (e.g. MIT for the code) and state it here. Data licenses remain those of the original providers. -->
